@@ -13,7 +13,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1000Gi
+      storage: 100Gi
 ---
 apiVersion: batch/v1
 kind: Job
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: dbench
-        image: logdna/dbench:latest
+        image: adnan80/dbench:latest
         imagePullPolicy: Always
         env:
           - name: DBENCH_MOUNTPOINT
