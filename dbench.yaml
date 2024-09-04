@@ -4,11 +4,6 @@ metadata:
   name: dbench-pv-claim
 spec:
   storageClassName: ssd
-  # storageClassName: gp2
-  # storageClassName: local-storage
-  # storageClassName: ibmc-block-bronze
-  # storageClassName: ibmc-block-silver
-  # storageClassName: ibmc-block-gold
   accessModes:
     - ReadWriteOnce
   resources:
